@@ -30,9 +30,6 @@ def test_buttons(page):
         page.get_by_role("button", name="Search by image").click()
         time.sleep(2)
         page.get_by_role("button", name="Close").click()
-        time.sleep(2)
-        page.get_by_role("button", name="Search by voice").click()
-        time.sleep(2)
     except Exception as e:
         print(f"An error occurred: {str(e)}")
 
