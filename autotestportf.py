@@ -1,5 +1,4 @@
 import pytest
-import time
 from playwright.sync_api import Playwright, sync_playwright
 
 @pytest.fixture(scope="module", params=["chromium", "firefox"])
