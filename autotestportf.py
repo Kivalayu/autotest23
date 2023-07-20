@@ -24,11 +24,8 @@ def test_buttons(page):
     try:
         page.goto("https://www.google.com/?hl=En", timeout=60000)
         page.get_by_role("button", name="Google Search").click()
-        time.sleep(2)
         page.get_by_role("combobox", name="Search").click()
-        time.sleep(2)
         page.get_by_role("button", name="Search by image").click()
-        time.sleep(2)
         page.get_by_role("button", name="Close").click()
     except Exception as e:
         print(f"An error occurred: {str(e)}")
